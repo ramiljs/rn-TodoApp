@@ -14,10 +14,9 @@ export const actionCreators = {
 
 export const initialState = {
     items: [
+        createItem('Ramil Kamalov'),
         createItem('Click to remove'),
         createItem('Learn React Native'),
-        createItem('Write Code'),
-        createItem('Ship App'),
     ],
 }
 
