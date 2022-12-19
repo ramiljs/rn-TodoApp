@@ -18,21 +18,22 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.ramildeveloper.rnfirstapp"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
       },
-      "package": "com.ramildeveloper.rnexpoapp"
+      "package": "com.ramildeveloper.rnfirstapp"
     },
     "web": {
       "favicon": "./assets/favicon.png"
     },
     "extra": {
       "eas": {
-        "projectId": "539cf12a-0376-426e-b797-d6900eea8897"
+        "projectId": "10a71f19-012b-49ba-8470-69a9d7ce9e7f"
       }
     }
   }
