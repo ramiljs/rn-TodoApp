@@ -1,14 +1,14 @@
-import React, { useReducer } from 'react'
-import { View } from 'react-native'
-import { List, Input, Title } from './featured/index'
+import React, { useReducer } from 'react';
+import { View } from 'react-native';
+import { List, Input, Title } from './featured/index';
 import {
     actionCreators,
     reducer,
     initialState,
-} from './featured/store/todosSlice'
+} from './featured/store/todosSlice';
 
 export const AppComponent = () => {
-    const [state, dispatch] = useReducer(reducer, initialState)
+    const [state, dispatch] = useReducer(reducer, initialState);
 
     return (
         <View>
@@ -22,5 +22,5 @@ export const AppComponent = () => {
                 onPressItem={(id) => dispatch(actionCreators.remove(id))}
             />
         </View>
-    )
-}
+    );
+};

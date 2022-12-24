@@ -1,8 +1,8 @@
-import React, { useState } from 'react'
-import { StyleSheet, TextInput } from 'react-native'
+import React, { useState } from 'react';
+import { StyleSheet, TextInput } from 'react-native';
 
 export const Input = ({ placeholder, onSubmitEditing }) => {
-    const [text, setText] = useState('')
+    const [text, setText] = useState('');
 
     return (
         <TextInput
@@ -11,18 +11,18 @@ export const Input = ({ placeholder, onSubmitEditing }) => {
             placeholder={placeholder}
             onChangeText={(value) => setText(value)}
             onSubmitEditing={() => {
-                if (!text) return // Don't submit if empty
+                if (!text) return; // Don't submit if empty
 
-                onSubmitEditing(text)
-                setText('')
+                onSubmitEditing(text);
+                setText('');
             }}
         />
-    )
-}
+    );
+};
 
 const styles = StyleSheet.create({
     input: {
         padding: 15,
         height: 50,
     },
-})
+});

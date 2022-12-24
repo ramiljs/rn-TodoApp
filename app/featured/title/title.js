@@ -1,15 +1,15 @@
-import React from 'react'
-import { StyleSheet, Text, View } from 'react-native'
+import React from 'react';
+import { StyleSheet, Text, View } from 'react-native';
 
 const Title = ({ children }) => {
     return (
         <View style={styles.header}>
             <Text style={styles.title}>{children}</Text>
         </View>
-    )
-}
+    );
+};
 
-export default Title
+export default Title;
 
 const styles = StyleSheet.create({
     header: {
@@ -21,4 +21,4 @@ const styles = StyleSheet.create({
         color: 'white',
         fontWeight: 'bold',
     },
-})
+});

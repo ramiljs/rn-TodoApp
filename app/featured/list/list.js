@@ -1,5 +1,5 @@
-import React from 'react'
-import { FlatList, StyleSheet, Text, TouchableOpacity } from 'react-native'
+import React from 'react';
+import { FlatList, StyleSheet, Text, TouchableOpacity } from 'react-native';
 
 export const List = ({ items, onPressItem }) => {
     return (
@@ -15,12 +15,12 @@ export const List = ({ items, onPressItem }) => {
                 </TouchableOpacity>
             )}
         />
-    )
-}
+    );
+};
 
 const itemColor = (index) => {
-    return `rgba(59, 108, 212, ${Math.max(1 - index / 10, 0.4)})`
-}
+    return `rgba(59, 108, 212, ${Math.max(1 - index / 10, 0.4)})`;
+};
 
 const styles = StyleSheet.create({
     item: {
@@ -30,4 +30,4 @@ const styles = StyleSheet.create({
     title: {
         color: 'white',
     },
-})
+});
